@@ -1,0 +1,33 @@
+body {
+  background: #D3A218; }
+
+h4 {
+  margin-top: 25px; }
+
+.container {
+  padding: 0; }
+
+.row {
+  margin-bottom: 20px; }
+
+.row .row {
+  margin-bottom: 0; }
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86, 61, 124, 0.2); }
+
+.col-md-2, .col-md-1 {
+  padding: 0px;
+  border: 0px;
+  background: #fff; }
+
+.row:before, .row:after {
+  margin: -5px 0; }
+  @media screen and (min-width: 922px) {
+    .row:before, .row:after {
+      margin: -5px 0; } }
+
+/*# sourceMappingURL=stele.css.map */

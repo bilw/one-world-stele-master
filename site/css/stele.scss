@@ -1,0 +1,36 @@
+body {
+  background: #D3A218;
+}
+h4 {
+  margin-top: 25px;
+}
+.container {
+  padding: 0;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  // margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  // background-color: #eee;
+  // background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+.col-md-2, .col-md-1 {
+  padding: 0px;
+  border: 0px;
+  background: #fff;
+}
+.row:before, .row:after {
+  margin: -5px 0;
+
+  @media screen and (min-width: 922px) {
+    margin: -5px 0;
+  }
+}
