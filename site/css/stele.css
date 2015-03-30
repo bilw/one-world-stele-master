@@ -6,6 +6,9 @@ h4 {
 
 .container {
   padding: 0; }
+  @media screen and (max-width: 520px) {
+    .container {
+      width: 160px; } }
 
 .row {
   margin-bottom: 20px; }
@@ -21,13 +24,46 @@ h4 {
   padding: 0px;
   border: 0px;
   background: #fff; }
-  .col-md-2 img, .col-md-1 img {
-    margin: -1px 0 !important; }
+
+@media screen and (min-width: 992px) {
+  .col-md-2 {
+    width: 12.5%; } }
+
+@media screen and (min-width: 992px) {
+  .col-md-1 {
+    width: 6.25%; } }
 
 .row:before, .row:after {
   display: none; }
-  @media screen and (min-width: 922px) {
+  @media screen and (min-width: 520px) {
     .row:before, .row:after {
       margin: -5px 0; } }
+
+.frame {
+  background: url(img/stele-frame.svg) no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: 178px !important;
+  position: absolute; }
+
+.frame-l {
+  background: url(img/stele-frame-l.svg) no-repeat;
+  background-size: contain;
+  min-height: 160px; }
+
+.frame-r {
+  background: url(img/stele-frame-r.svg) no-repeat;
+  background-size: 100%;
+  min-height: 160px; }
+
+.mudra {
+  width: 100%; }
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
 
 /*# sourceMappingURL=stele.css.map */
