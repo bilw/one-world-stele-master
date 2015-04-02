@@ -10,7 +10,7 @@ steleApp.config(function($routeProvider){
 	})
 	.when("/portfolios", {
 		controller: "SteleImageController",
-		templateUrl: "app/partials/portfolio_list_partial.html"
+		templateUrl: "app/partials/mudra_viewer_partial.html"
 	})
 	.otherwise({ redirectTo: "/404_page" 
 	});
