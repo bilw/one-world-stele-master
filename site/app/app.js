@@ -2,13 +2,13 @@ var steleApp = angular.module("oneWorldSteleApp", ["ngRoute"]);
 steleApp.config(function($routeProvider){
 	$routeProvider
 	.when("/", {
-		redirectTo: "/portfolios"
+		redirectTo: "/mudras"
 	})
 	.when("/portfolio/:portfolio_name", {
 		controller: "SteleViewController",
 		templateUrl: "app/partials/portfolio_view.html"
 	})
-	.when("/portfolios", {
+	.when("/mudras", {
 		controller: "SteleImageController",
 		templateUrl: "app/partials/mudra_viewer_partial.html"
 	})

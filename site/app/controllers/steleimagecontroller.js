@@ -1,36 +1,44 @@
 function SteleImageController( $scope ){
 
-	$scope.new_album = {};
-	$scope.add_portfolio_error = "";
+	$scope.new_mudra = {};
+	$scope.add_mudra_error = "";
 
 	$scope.mudras = [
-	{name: 'first', date: '04-01-2015', imageurl: 'images/IMG_0487.jpg'},
-	{name: 'second', date: '04-01-2015', imageurl: 'images/IMG_0488.jpg'},
-	{name: 'third', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
-	{name: 'fourth', date: '04-02-2015', imageurl: 'images/IMG_0494.jpg'}
+	{fullname: 'William Weis', title: 'title', email: '', wish: 'test wish', date: '04-01-2015', imageurl: 'images/IMG_0487.jpg'},
+	{fullname: 'Full Name', title: 'title', email: '', wish: 'test wish', date: '04-01-2015', imageurl: 'images/IMG_0488.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0491.jpg'},
+	{fullname: '', title: '', email: '', wish: 'test wish', date: '04-02-2015', imageurl: 'images/IMG_0494.jpg'}
 	];
 
-	$scope.addPortfolio = function( new_portfolio ){
-		if (!new_portfolio.title) 
+	$scope.addMudra = function( new_mudra ){
+		if (!new_mudra.fname) 
 		{
-			$scope.add_portfolio_error = "Missing title";
+			$scope.add_mudra_error = "Missing title";
 		}
-		else if (!new_portfolio.date || !is_valid_date(new_portfolio.date))
-		{
-			$scope.add_portfolio_error = "You must provide a date in format yyyy/mm/dd";
-		}
-		else if (!new_portfolio.description)
-		{
-			$scope.add_portfolio_error = "Missing description";
-		}
-		else if (!new_portfolio.name)
-		{
-			$scope.add_portfolio_error = "Missing name - six characters";
-		}
+		// else if (!new_mudra.date || !is_valid_date(new_mudra.date))
+		// {
+		// 	$scope.add_mudra_error = "You must provide a date in format yyyy/mm/dd";
+		// }
+		// else if (!new_mudra.description)
+		// {
+		// 	$scope.add_mudra_error = "Missing description";
+		// }
+		// else if (!new_mudra.name)
+		// {
+		// 	$scope.add_mudra_error = "Missing name - six characters";
+		// }
 		else {
-			$scope.portfolios.push( new_portfolio );
-			$scope.adding_portfolio = {};
-			$scope.add_portfolio_error = "";
+			$scope.mudras.push( new_mudra );
+			$scope.adding_mudra = {};
+			$scope.add_mudra_error = "";
 		};
 	};
 };

@@ -13,12 +13,48 @@
 	</div> -->
 
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-2">
+			<section>
+				<div class="alert" ng-show="add_mudra_error != '' ">
+					{{ add_mudra_error }}
+				</div>
+				<form name="myform" novalidate  ng-submit="addMudra(adding_mudra)">
+					<h3>Put up joy!</h3>
+					<p>Upload your mudra well-wishes!</p>
+
+					<input type="text" name="fullname" placeholder="fullname" ng-model="adding_mudra.fullname" ng-required="true" autofocus />
+					<input type="text" name="title" placeholder="title" ng-model="adding_mudra.title" ng-required="true" />
+					<input type="text" name="wish" placeholder="wish" ng-model="adding_mudra.wish" ng-required="true" />
+
+					<!-- <input type="file" ng-model="user.email" ng-required="true" /> -->
+
+					<input type="email" name="email" placeholder="email" ng-model="user.email" ng-required="true" />
+
+					<p class="error" ng-show="myform.email.$invalid && myform.email.$touched">
+						Must use a valid email address.
+					</p>
+
+					<!-- <input type="password" name="password" placeholder="password" 
+					ng-model="user.password" ng-required="true" />
+
+					<p class="error" ng-show="myform.password.$invalid && myform.password.$touched">
+						Must enter a password.
+					</p> -->
+
+					<button ng-disabled="myform.$invalid" type="submit">Add Mudra</button>
+				</form>
+			</section>
+		</div>
+		<div class="col-md-10">
 
 			<div class="row even">
 				<div class="col-md-2" ng-repeat="mudra in mudras  | filter: { title: searchFor } ">
-					<div class="frame"></div>
-					<img class="mudra" src="{{ mudra.imageurl }}" />
+					<!-- <div class="frame"></div> -->
+					<a href="">
+						<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
+						<p>{{mudra.fullname}}</p>
+						<p>{{mudra.wish}}</p>
+					</a>
 				</div>
 			</div>
 

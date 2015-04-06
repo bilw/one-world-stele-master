@@ -11,6 +11,8 @@ h4 {
       width: 160px; } }
 
 .row {
+  margin-right: 0;
+  margin-left: 0;
   margin-bottom: 20px; }
 
 .row .row {
@@ -22,8 +24,7 @@ h4 {
 
 .col-md-2, .col-md-1 {
   padding: 0px;
-  border: 0px;
-  background: #fff; }
+  border: 0px; }
 
 @media screen and (min-width: 992px) {
   .col-md-2 {
@@ -57,7 +58,8 @@ h4 {
   min-height: 160px; }
 
 .mudra {
-  width: 100%; }
+  width: 90%;
+  padding-bottom: 10px; }
 
 .group:after {
   content: ".";
