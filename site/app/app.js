@@ -1,5 +1,6 @@
-var steleApp = angular.module("oneWorldSteleApp", ["ngRoute"]);
-steleApp.config(function($routeProvider){
+var steleApp = angular.module("oneWorldSteleApp", ["ngRoute","firebase"]);
+
+steleApp.config(["$routeProvider", function($routeProvider) {
 	$routeProvider
 	.when("/", {
 		redirectTo: "/mudras"
@@ -9,9 +10,11 @@ steleApp.config(function($routeProvider){
 		templateUrl: "app/partials/portfolio_view.html"
 	})
 	.when("/mudras", {
-		controller: "SteleImageController",
-		templateUrl: "app/partials/mudra_viewer_partial.html"
+		controller: "mudrasController",
+		templateUrl: "app/partials/mudras.html"
 	})
-	.otherwise({ redirectTo: "/404_page" 
+	.otherwise({ 
+		redirectTo: "/404_page" 
 	});
-});
+}]);
+

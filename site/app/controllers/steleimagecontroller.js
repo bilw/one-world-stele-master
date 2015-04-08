@@ -1,3 +1,5 @@
+steleApp.controller("SteleImageController", SteleImageController);
+
 function SteleImageController( $scope ){
 
 	$scope.new_mudra = {};
@@ -19,7 +21,7 @@ function SteleImageController( $scope ){
 	];
 
 	$scope.addMudra = function( new_mudra ){
-		if (!new_mudra.fname) 
+		if (!new_mudra.fullname) 
 		{
 			$scope.add_mudra_error = "Missing title";
 		}
@@ -43,7 +45,7 @@ function SteleImageController( $scope ){
 	};
 };
 
-steleApp.controller("SteleImageController", SteleImageController);
+
 
 function is_valid_date (the_date){
 		//http://eloquentjavascript.net/09_regexp.html
