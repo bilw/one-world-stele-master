@@ -1,4 +1,5 @@
-var steleApp = angular.module("oneWorldSteleApp", ["ngRoute","firebase"]);
+var steleApp = angular.module("oneWorldSteleApp", ["ngRoute","firebase"])
+.constant("FIREBASE_URL", "https://stele-test-01.firebaseio.com/data");
 
 steleApp.config(["$routeProvider", function($routeProvider) {
 	$routeProvider
