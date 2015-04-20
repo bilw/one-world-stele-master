@@ -1,34 +1,22 @@
 <div>
-	<!-- <input type="text" placeholder="Search..." ng-model="searchFor" size="20" style="display:block; margin:20px" /> -->
-	<!-- <div class="panel panel-primary" ng-repeat="mudra in mudras  | filter: { title: searchFor } ">
-		<div class="panel-heading">
-			<a href="index.html#/portfolio/{{ portfolio.name }}">
-				{{ portfolio.title }} 
-			</a>
-			<div class="date">{{ mudra.date }}</div>
-		</div>
-		<div class="panel-body">
-			{{ portfolio.description }}
-		</div>
-	</div> -->
-
 	<div class="row">
 		<div class="col-md-2">
 			<section>
 				<!-- <div class="alert" ng-show="add_mudra_error != '' ">
 					{{ add_mudra_error }}
 				</div> -->
-				<form name="myform" novalidate  ng-submit="addMudra(adding_mudra)">
+				<!-- <form name="myform" novalidate  ng-submit="addMudra(adding_mudra)"> -->
+				<form name="myform" novalidate  ng-submit="addMudra()">
 					<h3>Put up joy!</h3>
 					<p>Upload your mudra well-wishes!</p>
 
-					<input type="text" name="fullname" placeholder="full name" ng-model="adding_mudra.fullname" ng-required="true" autofocus />
+					<input type="text" name="fullname" placeholder="full name" ng-model="adding_mudra.fullname" ng-required="true" id="fullname" event-focus="click" event-focus-id="email" autofocus />
 					<input type="text" name="title" placeholder="title" ng-model="adding_mudra.title" ng-required="true" />
 					<input type="text" name="wish" placeholder="wish" ng-model="adding_mudra.wish" ng-required="true" />
 
 					<!-- <input type="file" ng-model="user.email" ng-required="true" /> -->
 
-					<input type="email" name="email" placeholder="email" ng-model="user.email" ng-required="true" />
+					<input type="email" name="email" placeholder="email" ng-model="adding_mudra.email" ng-required="true" />
 
 					<p class="error" ng-show="myform.email.$invalid && myform.email.$touched">
 						Must use a valid email address.
@@ -48,7 +36,7 @@
 		<div class="col-md-10">
 
 			<div class="row even">
-				<div class="col-md-2" ng-repeat="mudra in mudraData">
+				<div class="col-md-2" ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
 					<!-- <div class="frame"></div> -->
 					<a href="">
 						<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
@@ -60,35 +48,6 @@
 
 		</div>
 	</div>
-
-	<!--<p class="cl" style="clear:both;">There are {{ mudraData.length }} mudras available.</p>-->
-
-	<!-- <div class="cl">
-		<h3>Add a Portfolio</h3>
-		<div class="panel panel-default">
-			<div class="alert alert-danger" ng-show="add_portfolio_error">
-				{{add_portfolio_error}}
-			</div>
-			<form name="add_portfolio_form" novalidate>
-				<div class="panel-heading">
-					<input type="text" placeholder="title" size="20" ng-model="adding_portfolio.title" />
-					<div style="float:right">
-						<input 
-						type="text" 
-						placeholder="yyyy/mm/dd" 
-						size="10" 
-						ng-model="adding_portfolio.date" />
-					</div>
-				</div>
-				<div class="panel-body">
-					<textarea placeholder="description" rows="4" ng-model="adding_portfolio.description" ></textarea>
-					<input type="text" placeholder="name" size="10" ng-model="adding_portfolio.name" />
-					<input type="text" placeholder="image url" size="20" ng-model="adding_portfolio.imageurl" />
-				</div>
-				<button ng-click="addPortfolio(adding_portfolio)" class="btn btn-success">Add Portfolio</button>
-			</form>
-		</div>
-	</div> -->
 </div>
 
 
