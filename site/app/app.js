@@ -12,7 +12,7 @@ steleApp.config(["$routeProvider", function($routeProvider) {
 	})
 	.when("/mudras", {
 		controller: "mudrasController",
-		templateUrl: "app/partials/mudras.html"
+		templateUrl: "app/partials/mudras_circle.html"
 	})
 	.otherwise({ 
 		redirectTo: "/404_page" 
