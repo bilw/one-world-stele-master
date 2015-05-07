@@ -13,19 +13,8 @@ steleApp.controller("mudrasController", function($scope, $firebaseArray, FIREBAS
 			email: $scope.adding_mudra.email,
 			timestamp: Firebase.ServerValue.TIMESTAMP
 		});
-
 		$scope.adding_mudra = "";
-
-		$scope.adding_mudra = function() {
-			focus(adding_mudra.fullname);
-		}
-		//$scope.focus(fullname);
-
-		//$scope.adding_mudra.$setUntouched();
-
+		$scope.myform.$setUntouched();
 	}
-
-	
-
 });
 

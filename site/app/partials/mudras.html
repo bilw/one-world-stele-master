@@ -37,17 +37,26 @@
 
 			<div class="row even">
 				<div class="col-md-2" ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
-					<!-- <div class="frame"></div> -->
 					<a href="">
 						<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
 						<p>{{mudra.fullname}}</p>
 						<p>{{mudra.wish}}</p>
 					</a>
 				</div>
+				
 			</div>
 
 		</div>
 	</div>
+	<!-- <ul>
+		<li ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
+			<a href="">
+				<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
+				<p>{{mudra.fullname}}</p>
+				<p>{{mudra.wish}}</p>
+			</a>
+		</li>
+	</ul> -->
 </div>
 
 

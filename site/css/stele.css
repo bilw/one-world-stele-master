@@ -1,45 +1,58 @@
+/* line 1, stele.scss */
 body {
   background: #D3A218; }
 
+/* line 4, stele.scss */
 h4 {
   margin-top: 25px; }
 
+/* line 7, stele.scss */
 .container {
   padding: 0; }
   @media screen and (max-width: 520px) {
+    /* line 7, stele.scss */
     .container {
       width: 160px; } }
 
+/* line 14, stele.scss */
 .row {
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 20px; }
 
+/* line 19, stele.scss */
 .row .row {
   margin-bottom: 0; }
 
+/* line 23, stele.scss */
 [class*="col-"] {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+/* line 31, stele.scss */
 .col-md-2, .col-md-1 {
   padding: 0px;
   border: 0px; }
 
 @media screen and (min-width: 992px) {
+  /* line 44, stele.scss */
   .col-md-2 {
     width: 12.5%; } }
 
 @media screen and (min-width: 992px) {
+  /* line 49, stele.scss */
   .col-md-1 {
     width: 6.25%; } }
 
+/* line 55, stele.scss */
 .row:before, .row:after {
   display: none; }
   @media screen and (min-width: 520px) {
+    /* line 55, stele.scss */
     .row:before, .row:after {
       margin: -5px 0; } }
 
+/* line 63, stele.scss */
 .frame {
   background: url(img/stele-frame.svg) no-repeat;
   background-size: 100%;
@@ -47,25 +60,27 @@ h4 {
   min-height: 178px !important;
   position: absolute; }
 
+/* line 72, stele.scss */
 .frame-l {
   background: url(img/stele-frame-l.svg) no-repeat;
   background-size: contain;
   min-height: 160px; }
 
+/* line 77, stele.scss */
 .frame-r {
   background: url(img/stele-frame-r.svg) no-repeat;
   background-size: 100%;
   min-height: 160px; }
 
+/* line 82, stele.scss */
 .mudra {
   width: 90%;
   padding-bottom: 10px; }
 
+/* line 92, stele.scss */
 .group:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden; }
-
-/*# sourceMappingURL=stele.css.map */
