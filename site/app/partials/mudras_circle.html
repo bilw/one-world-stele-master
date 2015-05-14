@@ -1,9 +1,5 @@
-<div>
+<div class="form">
 	<section>
-		<!-- <div class="alert" ng-show="add_mudra_error != '' ">
-			{{ add_mudra_error }}
-		</div> -->
-		<!-- <form name="myform" novalidate  ng-submit="addMudra(adding_mudra)"> -->
 		<form name="myform" novalidate  ng-submit="addMudra()">
 			<h3>Put up joy!</h3>
 			<p>Upload your mudra well-wishes!</p>
@@ -11,9 +7,6 @@
 			<input type="text" name="fullname" placeholder="full name" ng-model="adding_mudra.fullname" ng-required="true" id="fullname" event-focus="click" event-focus-id="email" autofocus />
 			<input type="text" name="title" placeholder="title" ng-model="adding_mudra.title" ng-required="true" />
 			<input type="text" name="wish" placeholder="wish" ng-model="adding_mudra.wish" ng-required="true" />
-
-			<!-- <input type="file" ng-model="user.email" ng-required="true" /> -->
-
 			<input type="email" name="email" placeholder="email" ng-model="adding_mudra.email" ng-required="true" />
 
 			<p class="error" ng-show="myform.email.$invalid && myform.email.$touched">
@@ -31,13 +24,15 @@
 		</form>
 	</section>
 </div>
-<div>
+<div class="binduContainer" ng-repeat="mudra in mudraData | orderBy:'-timestamp' | limitTo:1">
+	<div class="bindu">{{mudra.fullname}}</div>
+</div>
+<div class="ring1">
 <ul>
 	<li ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
 		<a href="">
 			<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
 			<p>{{mudra.fullname}}</p>
-			<p>{{mudra.wish}}</p>
 		</a>
 	</li>
 </ul>

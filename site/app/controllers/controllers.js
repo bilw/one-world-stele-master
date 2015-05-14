@@ -15,6 +15,7 @@ steleApp.controller("mudrasController", function($scope, $firebaseArray, FIREBAS
 		});
 		$scope.adding_mudra = "";
 		$scope.myform.$setUntouched();
+		$scope.numLimit = 3;
 	}
 });
 

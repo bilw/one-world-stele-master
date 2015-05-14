@@ -22,12 +22,13 @@
     opacity: 1;
   }
 }
+
 li:nth-child(1) {
-  -webkit-transform: translate(272px, 169px);
-  -moz-transform: translate(272px, 169px);
-  -ms-transform: translate(272px, 169px);
-  -o-transform: translate(272px, 169px);
-  transform: translate(272px, 169px);
+  -webkit-transform: translate(158px, -49px);
+  -moz-transform: translate(158px, -49px);
+  -ms-transform: translate(158px, -49px);
+  -o-transform: translate(158px, -49px);
+  transform: translate(158px, -49px);
   -webkit-animation: fadein 1s 300ms 1 normal forwards;
   -moz-animation: fadein 1s 300ms 1 normal forwards;
   -ms-animation: fadein 1s 300ms 1 normal forwards;
@@ -41,11 +42,11 @@ li:nth-child(1) {
 }
 
 li:nth-child(2) {
-  -webkit-transform: translate(225px, 223px);
-  -moz-transform: translate(225px, 223px);
-  -ms-transform: translate(225px, 223px);
-  -o-transform: translate(225px, 223px);
-  transform: translate(225px, 223px);
+  -webkit-transform: translate(225px, -24px);
+  -moz-transform: translate(225px, -24px);
+  -ms-transform: translate(225px, -24px);
+  -o-transform: translate(225px, -24px);
+  transform: translate(225px, -24px);
   -webkit-animation: fadein 1s 600ms 1 normal forwards;
   -moz-animation: fadein 1s 600ms 1 normal forwards;
   -ms-animation: fadein 1s 600ms 1 normal forwards;
@@ -59,11 +60,11 @@ li:nth-child(2) {
 }
 
 li:nth-child(3) {
-  -webkit-transform: translate(158px, 248px);
-  -moz-transform: translate(158px, 248px);
-  -ms-transform: translate(158px, 248px);
-  -o-transform: translate(158px, 248px);
-  transform: translate(158px, 248px);
+  -webkit-transform: translate(272px, 30px);
+  -moz-transform: translate(272px, 30px);
+  -ms-transform: translate(272px, 30px);
+  -o-transform: translate(272px, 30px);
+  transform: translate(272px, 30px);
   -webkit-animation: fadein 1s 900ms 1 normal forwards;
   -moz-animation: fadein 1s 900ms 1 normal forwards;
   -ms-animation: fadein 1s 900ms 1 normal forwards;
@@ -77,11 +78,11 @@ li:nth-child(3) {
 }
 
 li:nth-child(4) {
-  -webkit-transform: translate(86px, 240px);
-  -moz-transform: translate(86px, 240px);
-  -ms-transform: translate(86px, 240px);
-  -o-transform: translate(86px, 240px);
-  transform: translate(86px, 240px);
+  -webkit-transform: translate(290px, 99px);
+  -moz-transform: translate(290px, 99px);
+  -ms-transform: translate(290px, 99px);
+  -o-transform: translate(290px, 99px);
+  transform: translate(290px, 99px);
   -webkit-animation: fadein 1s 1200ms 1 normal forwards;
   -moz-animation: fadein 1s 1200ms 1 normal forwards;
   -ms-animation: fadein 1s 1200ms 1 normal forwards;
@@ -95,11 +96,11 @@ li:nth-child(4) {
 }
 
 li:nth-child(5) {
-  -webkit-transform: translate(27px, 199px);
-  -moz-transform: translate(27px, 199px);
-  -ms-transform: translate(27px, 199px);
-  -o-transform: translate(27px, 199px);
-  transform: translate(27px, 199px);
+  -webkit-transform: translate(272px, 169px);
+  -moz-transform: translate(272px, 169px);
+  -ms-transform: translate(272px, 169px);
+  -o-transform: translate(272px, 169px);
+  transform: translate(272px, 169px);
   -webkit-animation: fadein 1s 1500ms 1 normal forwards;
   -moz-animation: fadein 1s 1500ms 1 normal forwards;
   -ms-animation: fadein 1s 1500ms 1 normal forwards;
@@ -113,11 +114,11 @@ li:nth-child(5) {
 }
 
 li:nth-child(6) {
-  -webkit-transform: translate(-6px, 135px);
-  -moz-transform: translate(-6px, 135px);
-  -ms-transform: translate(-6px, 135px);
-  -o-transform: translate(-6px, 135px);
-  transform: translate(-6px, 135px);
+  -webkit-transform: translate(225px, 223px);
+  -moz-transform: translate(225px, 223px);
+  -ms-transform: translate(225px, 223px);
+  -o-transform: translate(225px, 223px);
+  transform: translate(225px, 223px);
   -webkit-animation: fadein 1s 1800ms 1 normal forwards;
   -moz-animation: fadein 1s 1800ms 1 normal forwards;
   -ms-animation: fadein 1s 1800ms 1 normal forwards;
@@ -131,11 +132,11 @@ li:nth-child(6) {
 }
 
 li:nth-child(7) {
-  -webkit-transform: translate(-6px, 64px);
-  -moz-transform: translate(-6px, 64px);
-  -ms-transform: translate(-6px, 64px);
-  -o-transform: translate(-6px, 64px);
-  transform: translate(-6px, 64px);
+  -webkit-transform: translate(158px, 248px);
+  -moz-transform: translate(158px, 248px);
+  -ms-transform: translate(158px, 248px);
+  -o-transform: translate(158px, 248px);
+  transform: translate(158px, 248px);
   -webkit-animation: fadein 1s 2100ms 1 normal forwards;
   -moz-animation: fadein 1s 2100ms 1 normal forwards;
   -ms-animation: fadein 1s 2100ms 1 normal forwards;
@@ -149,11 +150,11 @@ li:nth-child(7) {
 }
 
 li:nth-child(8) {
-  -webkit-transform: translate(27px, 0px);
-  -moz-transform: translate(27px, 0px);
-  -ms-transform: translate(27px, 0px);
-  -o-transform: translate(27px, 0px);
-  transform: translate(27px, 0px);
+  -webkit-transform: translate(86px, 240px);
+  -moz-transform: translate(86px, 240px);
+  -ms-transform: translate(86px, 240px);
+  -o-transform: translate(86px, 240px);
+  transform: translate(86px, 240px);
   -webkit-animation: fadein 1s 2400ms 1 normal forwards;
   -moz-animation: fadein 1s 2400ms 1 normal forwards;
   -ms-animation: fadein 1s 2400ms 1 normal forwards;
@@ -167,11 +168,11 @@ li:nth-child(8) {
 }
 
 li:nth-child(9) {
-  -webkit-transform: translate(86px, -41px);
-  -moz-transform: translate(86px, -41px);
-  -ms-transform: translate(86px, -41px);
-  -o-transform: translate(86px, -41px);
-  transform: translate(86px, -41px);
+  -webkit-transform: translate(27px, 199px);
+  -moz-transform: translate(27px, 199px);
+  -ms-transform: translate(27px, 199px);
+  -o-transform: translate(27px, 199px);
+  transform: translate(27px, 199px);
   -webkit-animation: fadein 1s 2700ms 1 normal forwards;
   -moz-animation: fadein 1s 2700ms 1 normal forwards;
   -ms-animation: fadein 1s 2700ms 1 normal forwards;
@@ -185,11 +186,11 @@ li:nth-child(9) {
 }
 
 li:nth-child(10) {
-  -webkit-transform: translate(158px, -49px);
-  -moz-transform: translate(158px, -49px);
-  -ms-transform: translate(158px, -49px);
-  -o-transform: translate(158px, -49px);
-  transform: translate(158px, -49px);
+  -webkit-transform: translate(-6px, 135px);
+  -moz-transform: translate(-6px, 135px);
+  -ms-transform: translate(-6px, 135px);
+  -o-transform: translate(-6px, 135px);
+  transform: translate(-6px, 135px);
   -webkit-animation: fadein 1s 3000ms 1 normal forwards;
   -moz-animation: fadein 1s 3000ms 1 normal forwards;
   -ms-animation: fadein 1s 3000ms 1 normal forwards;
@@ -203,11 +204,11 @@ li:nth-child(10) {
 }
 
 li:nth-child(11) {
-  -webkit-transform: translate(225px, -24px);
-  -moz-transform: translate(225px, -24px);
-  -ms-transform: translate(225px, -24px);
-  -o-transform: translate(225px, -24px);
-  transform: translate(225px, -24px);
+  -webkit-transform: translate(-6px, 64px);
+  -moz-transform: translate(-6px, 64px);
+  -ms-transform: translate(-6px, 64px);
+  -o-transform: translate(-6px, 64px);
+  transform: translate(-6px, 64px);
   -webkit-animation: fadein 1s 3300ms 1 normal forwards;
   -moz-animation: fadein 1s 3300ms 1 normal forwards;
   -ms-animation: fadein 1s 3300ms 1 normal forwards;
@@ -221,16 +222,16 @@ li:nth-child(11) {
 }
 
 li:nth-child(12) {
-  -webkit-transform: translate(272px, 30px);
-  -moz-transform: translate(272px, 30px);
-  -ms-transform: translate(272px, 30px);
-  -o-transform: translate(272px, 30px);
-  transform: translate(272px, 30px);
-  -webkit-animation: fadein 1s 3600ms 1 normal forwards;
-  -moz-animation: fadein 1s 3600ms 1 normal forwards;
-  -ms-animation: fadein 1s 3600ms 1 normal forwards;
-  -o-animation: fadein 1s 3600ms 1 normal forwards;
-  animation: fadein 1s 3600ms 1 normal forwards;
+  -webkit-transform: translate(27px, 0px);
+  -moz-transform: translate(27px, 0px);
+  -ms-transform: translate(27px, 0px);
+  -o-transform: translate(27px, 0px);
+  transform: translate(27px, 0px);
+  -webkit-animation: fadein 1s 3500ms 1 normal forwards;
+  -moz-animation: fadein 1s 3500ms 1 normal forwards;
+  -ms-animation: fadein 1s 3500ms 1 normal forwards;
+  -o-animation: fadein 1s 3500ms 1 normal forwards;
+  animation: fadein 1s 3500ms 1 normal forwards;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -ms-transition: opacity 1s;
@@ -239,16 +240,16 @@ li:nth-child(12) {
 }
 
 li:nth-child(13) {
-  -webkit-transform: translate(290px, 99px);
-  -moz-transform: translate(290px, 99px);
-  -ms-transform: translate(290px, 99px);
-  -o-transform: translate(290px, 99px);
-  transform: translate(290px, 99px);
-  -webkit-animation: fadein 1s 3900ms 1 normal forwards;
-  -moz-animation: fadein 1s 3900ms 1 normal forwards;
-  -ms-animation: fadein 1s 3900ms 1 normal forwards;
-  -o-animation: fadein 1s 3900ms 1 normal forwards;
-  animation: fadein 1s 3900ms 1 normal forwards;
+  -webkit-transform: translate(86px, -41px);
+  -moz-transform: translate(86px, -41px);
+  -ms-transform: translate(86px, -41px);
+  -o-transform: translate(86px, -41px);
+  transform: translate(86px, -41px);
+  -webkit-animation: fadein 1s 3800ms 1 normal forwards;
+  -moz-animation: fadein 1s 3800ms 1 normal forwards;
+  -ms-animation: fadein 1s 3800ms 1 normal forwards;
+  -o-animation: fadein 1s 3800ms 1 normal forwards;
+  animation: fadein 1s 3800ms 1 normal forwards;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -ms-transition: opacity 1s;
@@ -275,10 +276,52 @@ body {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-div {
+section {
   text-align: center;
   width: 20em;
-  margin: 4em auto;
+  margin: 3em auto 2.3em;
+}
+
+.form {
+  text-align: center;
+  width: 21.5em;
+  margin: 0 auto;
+}
+
+.binduContainer {
+  text-align: center;
+  width: 21.5em;
+  margin: 0 auto;
+}
+
+.bindu {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-animation: fadein 1s 200ms 1 normal forwards;
+  -moz-animation: fadein 1s 200ms 1 normal forwards;
+  -ms-animation: fadein 1s 200ms 1 normal forwards;
+  -o-animation: fadein 1s 200ms 1 normal forwards;
+  animation: fadein 1s 200ms 1 normal forwards;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  display: block;
+  opacity: 0;
+  width: 12em;
+  height: 12em;
+  background: #FF0;
+  margin: 7em auto 0;
+}
+
+.ring1 {
+  text-align: center;
+  width: 21.5em;
+  margin: -14.25em auto 24em;
 }
 
 ul {
@@ -297,7 +340,7 @@ ul li {
   position: absolute;
   display: block;
   opacity: 0;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   background: #FF0;
 }
