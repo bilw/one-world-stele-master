@@ -9,31 +9,29 @@
 			<input type="text" name="wish" placeholder="wish" ng-model="adding_mudra.wish" ng-required="true" />
 			<input type="email" name="email" placeholder="email" ng-model="adding_mudra.email" ng-required="true" />
 
-			<p class="error" ng-show="myform.email.$invalid && myform.email.$touched">
-				Must use a valid email address.
-			</p>
+			<p class="error" ng-show="myform.email.$invalid && myform.email.$touched">Must use a valid email address.</p>
 
-			<!-- <input type="password" name="password" placeholder="password" 
-			ng-model="user.password" ng-required="true" />
+			<input type="file" required="true" id="file-upload" ng-click="addImage()" />
 
-			<p class="error" ng-show="myform.password.$invalid && myform.password.$touched">
-				Must enter a password.
-			</p> -->
+			<!-- <input type="password" name="password" placeholder="password" ng-model="user.password" ng-required="true" />
+			<p class="error" ng-show="myform.password.$invalid && myform.password.$touched">Must enter a password.</p> -->
 
-			<button ng-disabled="myform.$invalid" type="submit">Add Mudra</button>
+			<button class="mudraButton" ng-disabled="myform.$invalid" type="submit">Add Mudra</button>
 		</form>
 	</section>
 </div>
 <div class="binduContainer" ng-repeat="mudra in mudraData | orderBy:'-timestamp' | limitTo:1">
-	<div class="bindu">{{mudra.fullname}}</div>
+	<div class="bindu">
+		<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
+	</div>
 </div>
 <div class="ring1">
-<ul>
-	<li ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
-		<a href="">
-			<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
-			<p>{{mudra.fullname}}</p>
-		</a>
-	</li>
-</ul>
+	<ul>
+		<li ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
+			<a href="{{mudra.title}}">
+				<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
+				<p>{{mudra.fullname}}</p>
+			</a>
+		</li>
+	</ul>
 </div>
