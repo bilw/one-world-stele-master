@@ -1,6 +1,6 @@
 <div class="form">
 	<section>
-		<form name="myform" novalidate  ng-submit="addMudra()">
+		<form name="myform" novalidate ng-submit="addMudra()">
 			<h3>Put up joy!</h3>
 			<p>Upload your mudra well-wishes!</p>
 
@@ -28,7 +28,7 @@
 <div class="ring1">
 	<ul>
 		<li ng-repeat="mudra in mudraData | orderBy:'-timestamp'">
-			<a href="{{mudra.title}}">
+			<a href="#mudras/{{mudra.title}}">
 				<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
 				<p>{{mudra.fullname}}</p>
 			</a>

@@ -1,4 +1,4 @@
-steleApp.controller("mudrasController", function($scope, $firebaseArray, FIREBASE_URL){
+steleApp.controller('mudrasController', ['$scope', '$firebaseArray', 'FIREBASE_URL', function($scope, $firebaseArray, FIREBASE_URL) {
 
 	var ref = new Firebase(FIREBASE_URL);
 
@@ -40,5 +40,16 @@ steleApp.controller("mudrasController", function($scope, $firebaseArray, FIREBAS
 	  );
 	}
 
-});
+}]);
+
+steleApp.controller('mudraViewController', ['$scope', '$firebaseArray', '$routeParams', 'FIREBASE_URL', function($scope, $firebaseArray, 
+	$routeParams, FIREBASE_URL) {
+	$scope.mudra_name = $routeParams.mudra_name;
+	var mudra_name = $routeParams.mudra_name;
+}]);
+
+
+
+
+
 
