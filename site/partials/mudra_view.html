@@ -1,6 +1,10 @@
-<div class="binduContainer" ng-repeat="mudra in mudraData">
+<span ng-bind="mudra.title"></span>
+
+<div class="binduContainer" ng-repeat="mudra in mudraData | orderBy:'-timestamp'"> <!-- ng-repeat="mudra in mudraData | orderBy:'-timestamp'" -->
 	<h2>{{ mudra.title }}</h2>
-	<div class="bindu">
-		<img class="mudra" ng-src="{{mudra.imageurl}}" ng-alt="{{mudra.title}}" />
+	<div>
+		<img class="mudra" ng-src="{{ mudra.imageurl }}" ng-alt="{{ mudra.title }}" />
+		<!-- <span ng-bind="mudraData.title"></span> -->
+		<p>{{ mudra.wish }}</p>
 	</div>
 </div>
